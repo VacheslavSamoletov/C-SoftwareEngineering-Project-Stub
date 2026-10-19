@@ -1,3 +1,50 @@
-This is an example of C++ project for students of the Software Engineering course.
-Do not complicate much, keep it simple.
-Use very simple English for conversations.
+# Мини research-платформа на C++17
+
+Учебный проект для курса Software Engineering.
+Программа читает данные из двух источников, считает статистику и формирует dataset.
+Не усложняй, делай просто.
+
+## Язык
+
+- Общение с пользователем и документация — на русском.
+- Код и комментарии в коде — на английском.
+
+## Структура папок
+
+- `src/` — код
+- `tests/` — тесты
+- `benchmarks/` — бенчмарк
+- `docs/` — документация
+
+## Команды
+
+Сборка:
+
+```bash
+cmake -S . -B build
+cmake --build build
+```
+
+Запуск тестов:
+
+```bash
+ctest --test-dir build --output-on-failure
+```
+
+Запуск бенчмарка:
+
+```bash
+./build/benchmarks/bench
+```
+
+## Правила кода
+
+- Ядро (подсчёт статистики, сборка dataset) не зависит от ввода-вывода.
+  Чтение файлов, консоль и сеть — только в отдельном слое снаружи ядра.
+- Никакого ручного `new`/`delete`. Используй `std::vector`, `std::unique_ptr`, `std::make_unique` и т.п.
+- Новый код идёт вместе с тестом в `tests/`.
+
+## Ограничения для агента
+
+- Перед завершением задачи собери проект и запусти тесты. Если что-то не прошло — сообщи об этом.
+- Не меняй CI/CD (например, `.github/workflows/`) без запроса пользователя.
