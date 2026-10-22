@@ -1,4 +1,5 @@
 # Монте-Карло для оценки европейского опциона
+![CI](https://github.com/VacheslavSamoletov/C-SoftwareEngineering-Project-Stub/actions/workflows/ci.yml/badge.svg)
 
 Учебный проект курса «Программная инженерия и C++ для количественного анализа
 и алгоритмической торговли» (Вега Институт, 2026).
