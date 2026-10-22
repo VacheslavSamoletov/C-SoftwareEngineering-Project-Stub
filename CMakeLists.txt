@@ -8,4 +8,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Helps VS Code IntelliSense understand the project
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_executable(main main.cpp)
+add_executable(main src/main.cpp)
