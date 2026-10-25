@@ -8,4 +8,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Helps VS Code IntelliSense understand the project
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+add_library(mc_core STATIC src/core/gbm.cpp)
+target_include_directories(mc_core PUBLIC src/core)
+
 add_executable(main src/main.cpp)
+target_link_libraries(main PRIVATE mc_core)
+
+enable_testing()
+add_subdirectory(tests)
