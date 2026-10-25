@@ -16,3 +16,4 @@ target_link_libraries(main PRIVATE mc_core)
 
 enable_testing()
 add_subdirectory(tests)
+add_subdirectory(benchmarks)

@@ -25,5 +25,8 @@ jobs:
       - name: Test
         run: ctest --test-dir build --output-on-failure
 
+      - name: Benchmark
+        run: ./build/benchmarks/gbm_bench
+
       - name: Run
         run: ./build/main

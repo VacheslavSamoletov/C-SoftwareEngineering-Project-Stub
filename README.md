@@ -33,6 +33,15 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
+## Бенчмарк
+
+Скорость `mc::generate_gbm_path` для n_steps = 252, 10 000 и 1 000 000
+(Google Benchmark). Запускать после сборки в Release:
+
+```bash
+./build/benchmarks/gbm_bench
+```
+
 ## Документация
 
 Doxygen-документация: ссылка появится после настройки GitHub Pages.
