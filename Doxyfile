@@ -1,0 +1,7 @@
+PROJECT_NAME           = "MC Option Pricing"
+INPUT                  = src README.md
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = README.md
+OUTPUT_DIRECTORY       = build/doxygen
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO

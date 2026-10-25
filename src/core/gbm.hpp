@@ -1,9 +1,17 @@
+/**
+ * \file gbm.hpp
+ * \brief Geometric Brownian motion path generation.
+ */
+
 #pragma once
 
 #include <cstddef>
 #include <cstdint>
 #include <vector>
 
+/**
+ * \brief Monte Carlo option pricing core.
+ */
 namespace mc {
 
 /**

@@ -44,4 +44,4 @@ ctest --test-dir build --output-on-failure
 
 ## Документация
 
-Doxygen-документация: ссылка появится после настройки GitHub Pages.
+Doxygen-документация: https://vacheslavsamoletov.github.io/C-SoftwareEngineering-Project-Stub/

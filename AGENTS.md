@@ -56,6 +56,12 @@ ctest --test-dir build --output-on-failure
 ./build/benchmarks/gbm_bench
 ```
 
+Документация (HTML в `build/doxygen/html`):
+
+```
+doxygen Doxyfile
+```
+
 ## Правила кода
 
 - Ядро не зависит от ввода-вывода. Чтение файлов, консоль и сеть — только снаружи ядра.
